@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Whisper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chocolate Whisper</h1>
+        <nav>
+            <ul>
+                <li><a href="#customize">Customize Chocolate</a></li>
+                <li><a href="#cookie-filling">Cookie Filling</a></li>
+                <li><a href="#matcha-filling">Matcha Filling</a></li>
+                <li><a href="#pistachio-filling">Pistachio Filling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="customize">
+            <h2>Customize Your Chocolate</h2>
+            <form>
+                <label for="chocolate-type">Choose your chocolate type:</label>
+                <select id="chocolate-type" name="chocolate-type">
+                    <option value="dark">Dark Chocolate</option>
+                    <option value="milk">Milk Chocolate</option>
+                    <option value="white">White Chocolate</option>
+                </select>
+
+                <label for="filling">Choose your filling:</label>
+                <select id="filling" name="filling">
+                    <option value="cookie">Cookie</option>
+                    <option value="matcha">Matcha</option>
+                    <option value="pistachio">Pistachio</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+
+                <button type="submit">Customize</button>
+            </form>
+        </section>
+
+        <section id="cookie-filling">
+            <h2>Buy Cookie Filling Chocolates</h2>
+            <p>Indulge in our delicious chocolates filled with cookie goodness. Perfect for a crunchy and sweet treat.</p>
+            <button type="button">Buy Now</button>
+        </section>
+
+        <section id="matcha-filling">
+            <h2>Buy Matcha Filling Chocolates</h2>
+            <p>Experience the unique taste of matcha combined with our premium chocolate. A treat for matcha lovers.</p>
+            <button type="button">Buy Now</button>
+        </section>
+
+        <section id="pistachio-filling">
+            <h2>Buy Pistachio Filling Chocolates</h2>
+            <p>Enjoy the rich and nutty flavor of pistachio filling in every bite. Perfect for nut lovers.</p>
+            <button type="button">Buy Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chocolate Whisper. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+CSS Code
+css
+Copy code
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6b4e71;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #6b4e71;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 1em;
+}
+
+input, select, button {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+button {
+    background-color: #6b4e71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a3f60;
+}
+
+footer {
+    background-color: #6b4e71;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
